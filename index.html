@@ -1,3 +1,28 @@
 <html>
-<p>hello world</p>
-</html>
+<head>
+  
+  <title>南方先生的个人网站</title>
+  <script type="text/javascript">
+    
+    function btnClick(){
+      var r=parseFloat(document.form1.Text1.value)
+      var x=document.form1.Text2
+      x.value=2*Math.PI*r
+      var y=document.form1.Text3
+      y.value=Math.PI*r*r
+    }
+</script>
+
+</head> 
+  <body>
+<h1>圆的半径与周长计算</h1>
+    <form name="form1">
+      半径:<input name="Text1" type="text"><br>
+      周长:<input name="Text2" type="text"><br>
+      面积:<input name="Text3" type="text"><br>
+      <input name="Button1" type="button" value="计算" onclick="btnclick()">
+      <input name="Reset1" type="reset" value="重置">
+      </form>
+    </body>
+
+      </html>
